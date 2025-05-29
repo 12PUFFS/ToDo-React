@@ -10,7 +10,7 @@ button {
   font-weight: bold;
   font-size: 18px;
   border: none;
-  box-shadow: 0 10px 20px rgba(255, 77, 77, 0.3);
+  /* box-shadow: 0 10px 20px rgba(255, 77, 77, 0.3); */
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;

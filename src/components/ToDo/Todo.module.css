@@ -1,0 +1,7 @@
+.list {
+  /* border: 1px solid rgba(255, 255, 255, 0.6); */
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+}

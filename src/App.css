@@ -8,14 +8,8 @@
   background: linear-gradient(135deg, #545486, #16213e);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
   flex-direction: column;
-}
-
-@media (min-width: 360px) {
-  .app {
-    overflow: hidden;
-    justify-content: start;
-  }
 }
