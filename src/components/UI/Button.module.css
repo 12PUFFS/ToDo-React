@@ -1,9 +1,9 @@
 button {
   padding: 25px;
   cursor: pointer;
-  border-radius: 50px;
-  background: linear-gradient(45deg, #ff4d4d, #f9cb28);
-  width: 150px;
+  border-radius: 25px;
+  background: #ff4d4d;
+  width: 200px;
   text-align: center;
   margin-left: 50px;
   color: white;
@@ -17,9 +17,8 @@ button {
 }
 
 button:hover {
-  transform: translateY(-5px);
   box-shadow: 0 15px 25px rgba(255, 77, 77, 0.4);
-  background: linear-gradient(45deg, #f9cb28, #ff4d4d);
+  /* background: linear-gradient(45deg, #f9cb28, #ff4d4d); */
 }
 
 button:active {
@@ -27,7 +26,7 @@ button:active {
   box-shadow: 0 5px 10px rgba(255, 77, 77, 0.2);
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(1);
   }
@@ -53,7 +52,7 @@ button {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 button {
   animation: pulse 2s infinite;
@@ -73,7 +72,7 @@ button:hover::after {
 @media (max-width: 768px) {
   button {
     width: 120px;
-    padding: 20px;
+    padding: 25px;
     margin-left: 20px;
     font-size: 16px;
   }

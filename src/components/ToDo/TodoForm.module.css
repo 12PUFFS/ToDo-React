@@ -1,6 +1,7 @@
 input {
+  text-transform: capitalize;
   padding: 25px;
-  width: 250px;
+  width: 900px;
   border: none;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
@@ -40,6 +41,13 @@ input:focus {
 
 @media (max-width: 768px) {
   input {
-    width: 200px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 360px) {
+  input {
+    width: 100px;
+    padding: 10px;
   }
 }
