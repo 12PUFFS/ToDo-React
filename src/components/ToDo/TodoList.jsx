@@ -1,13 +1,14 @@
 import Todo from './Todo';
 import styles from './TodoList.module.css';
+{
+}
 
-function TodoList() {
+function TodoList({ todos }) {
   return (
     <div className={styles.todo}>
-      <Todo />
-      <Todo />
-      <Todo />
-      <Todo />
+      {todos.map((todo) => (
+        <Todo key={todo.id} todo={todo} />
+      ))}
     </div>
   );
 }

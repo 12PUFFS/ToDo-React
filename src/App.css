@@ -5,7 +5,7 @@
 }
 
 .app {
-  font-family: 'Bebas Neue', sans-serif; /* Самый пиздатый шрифт */
+  font-family: sans-serif; /* Самый пиздатый шрифт */
   background: linear-gradient(135deg, #545486, #16213e);
   min-height: 100vh;
   display: flex;
@@ -14,10 +14,11 @@
   align-items: center;
   flex-direction: column;
 }
+text {
+  text-transform: none;
+}
 
 @media (max-width: 394px) {
   .app {
-    width: 100vw; /* Занимаем 100% ширины viewport */
-    overflow-x: hidden; /* Скрываем горизонтальный скролл */
   }
 }

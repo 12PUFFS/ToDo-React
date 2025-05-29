@@ -1,9 +1,9 @@
 import styles from './Todo.module.css';
 
-function Todo() {
+function Todo({ todo }) {
   return (
     <div className={styles.list}>
-      <h1>jrngj</h1>
+      <h1>{todo}</h1>
     </div>
   );
 }
