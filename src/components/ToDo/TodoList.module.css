@@ -11,6 +11,7 @@
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 1px;
   /* border: 1px solid rgba(255, 255, 255, 0.6); */
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -24,6 +25,8 @@
 
 @media (max-width: 394px) {
   .todo {
+    padding: 15px;
     width: 350px;
+    font-size: 15px;
   }
 }
