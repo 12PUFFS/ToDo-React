@@ -7,7 +7,7 @@ function TodoForm({ addTodo }) {
   const onSubmitHandler = (event) => {
     event.preventDefault();
     addTodo(text);
-    setText();
+    setText('');
   };
   return (
     <form onSubmit={onSubmitHandler} className={styles.input}>
