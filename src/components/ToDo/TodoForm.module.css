@@ -1,10 +1,21 @@
 input {
   padding: 20px;
-  text-transform: capitalize;
-  border-radius: 50px;
-  font-size: 20px;
+  width: 250px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-input:not(:last-child) {
-  margin-bottom: 50px;
+input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: #ff4d4d;
 }
