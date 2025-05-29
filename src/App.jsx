@@ -1,13 +1,14 @@
 import './App.css';
+// import Todo from './components/ToDo/Todo';
 import TodoForm from './components/ToDo/TodoForm';
-import Button from './components/UI/Button';
+import TodoList from './components/ToDo/TodoList';
 
 function App() {
   return (
     <>
       <div className="app">
         <TodoForm />
-        <Button />
+        <TodoList />
       </div>
     </>
   );

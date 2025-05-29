@@ -5,9 +5,10 @@
 
 .app {
   font-family: 'Bebas Neue', sans-serif; /* Самый пиздатый шрифт */
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #545486, #16213e);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
