@@ -1,0 +1,10 @@
+input {
+  padding: 20px;
+  text-transform: capitalize;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 50px;
+}
