@@ -14,11 +14,11 @@ function TodoForm({ addTodo }) {
       <form onSubmit={onSubmitHandler} className={styles.input}>
         <input
           type="text"
-          placeholder="enter your task"
+          placeholder="Enter your task"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button type="submit">Submit</button>;
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
