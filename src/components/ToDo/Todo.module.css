@@ -1,11 +1,16 @@
 .list {
-  /* border: 1px solid rgba(255, 255, 255, 0.6); */
+  border: 2px solid rgba(255, 255, 255, 0.6);
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
   text-transform: none;
+}
+
+h1:hover {
+  color: white;
 }
 
 /* h1 {
@@ -15,6 +20,7 @@
 .list:hover {
   border-color: #5a80ea;
   transition: all 0.5s ease;
+  background: #5a81ea57;
 }
 
 @media (max-width: 768px) {

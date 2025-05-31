@@ -1,18 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; // Добавлен useEffect
 import './App.css';
-// import Todo from './components/ToDo/Todo';
 import TodoForm from './components/ToDo/TodoForm';
 import TodoList from './components/ToDo/TodoList';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    try {
+      const savedTodos = localStorage.getItem('todos');
+      return savedTodos ? JSON.parse(savedTodos) : [];
+    } catch (error) {
+      console.error('Could not parse todos from localStorage', error);
+      return [];
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   const addTodoHandler = (text) => {
-    setTodos([...todos, text]);
+    if (!text.trim()) return;
+    setTodos([
+      ...todos,
+      {
+        id: Date.now(),
+        text: text,
+        completed: false,
+      },
+    ]);
   };
 
-  const deleteTodoHandler = (index) => {
-    setTodos(todos.filter((_, idx) => idx !== index));
+  const deleteTodoHandler = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   return (
