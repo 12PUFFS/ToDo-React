@@ -134,7 +134,7 @@ input:focus {
 @media (max-width: 768px) {
   input {
     margin-top: 0;
-    width: 660px;
+    width: 700px;
   }
 }
 
@@ -147,7 +147,7 @@ input:focus {
 
 @media (max-width: 394px) {
   input {
-    width: 320px;
+    width: 350px;
     font-size: 16px;
     padding: 1px;
   }
