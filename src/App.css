@@ -20,5 +20,6 @@ text {
 
 @media (max-width: 394px) {
   .app {
+    padding-top: 10px;
   }
 }
