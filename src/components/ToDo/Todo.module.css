@@ -8,9 +8,9 @@
   text-transform: none;
 }
 
-h1 {
+/* h1 {
   text-transform: capitalize;
-}
+} */
 
 .list:hover {
   border-color: #5a80ea;
